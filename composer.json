@@ -37,6 +37,7 @@
         "drupal/commerce": "~2.0",
         "drupal/console": "~1.0",
         "drupal/core": "~8.5",
+        "drupal/fivestar": "1.x-dev",
         "drupal/leaflet": "^1.0@beta",
         "drupal/leaflet_more_maps": "^1.0@alpha",
         "drupal/paragraphs": "^1.3",
