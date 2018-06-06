@@ -38,6 +38,7 @@
         "drupal/console": "~1.0",
         "drupal/core": "~8.5",
         "drupal/leaflet": "^1.0@beta",
+        "drupal/leaflet_more_maps": "^1.0@alpha",
         "drupal/search_api": "~1.0",
         "drupal/swiftmailer": "~1.0",
         "drupal/token": "~1.0",
