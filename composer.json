@@ -58,18 +58,18 @@
         ]
     },
     "scripts": {
-        "drupal-scaffold": "DrupalComposer\DrupalScaffold\Plugin::scaffold",
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "pre-install-cmd": [
-            "DrupalProject\composer\ScriptHandler::checkComposerVersion"
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
         ],
         "pre-update-cmd": [
-            "DrupalProject\composer\ScriptHandler::checkComposerVersion"
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
         ],
         "post-install-cmd": [
-            "DrupalProject\composer\ScriptHandler::createRequiredFiles"
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ],
         "post-update-cmd": [
-            "DrupalProject\composer\ScriptHandler::createRequiredFiles"
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ]
     },
     "extra": {
@@ -81,21 +81,21 @@
             "web/core": [
                 "type:drupal-core"
             ],
-            "web/libraries/{}": [
+            "web/libraries/{$name}": [
                 "type:drupal-library",
                 "type:bower-asset",
                 "type:npm-asset"
             ],
-            "web/modules/contrib/{}": [
+            "web/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "web/profiles/contrib/{}": [
+            "web/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
-            "web/themes/contrib/{}": [
+            "web/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
-            "drush/contrib/{}": [
+            "drush/contrib/{$name}": [
                 "type:drupal-drush"
             ]
         }
