@@ -2,3 +2,7 @@ name: adventure
 recipe: drupal8
 config:
   webroot: web
+  php: '7.1'
+  via: nginx
+  drush: composer
+  xdebug: true
